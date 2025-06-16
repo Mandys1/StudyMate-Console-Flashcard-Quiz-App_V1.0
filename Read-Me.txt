@@ -1,0 +1,44 @@
+tudyMate-Console-Flashcard-Quiz-App
+StudyMate – Console Flashcard Quiz App Project Overview StudyMate is a terminal-based flashcard application developed in C#. It allows students to create digital flashcards by subject, take quizzes to reinforce learning, track performance over time, and retest incorrect answers. It supports personalized study sessions, making it a useful tool for exam prep, memorization, and self-paced learning.
+
+Proposed improvements include: • SMS reminders for upcoming quizzes • Progress analytics dashboard • Multi-user profiles for shared devices • Voice-based question reading (future accessibility support)
+
+🎯 Project Objectives • Develop a user-friendly learning tool using C# and .NET • Enable users to create, manage, and quiz flashcards by subject • Encourage repetition and self-assessment through retesting features • Track users' learning progress with performance summaries • Support future features such as SMS alerts, multi-user access, and voice support
+
+💻 Technologies Used • Programming Language: C# • Framework: .NET 6 Console App • File Handling: JSON for storing flashcard data and user progress • Development Tools: Visual Studio, GitHub for version control • (Optional for enhancement): Twilio API for SMS integration
+
+⚙️ How It Works
+
+Home Menu Users launch the application and are presented with the main menu: o Create Flashcards o Take a Quiz o View Performance o Retest Wrong Answers o Exit
+
+Flashcard Management Users can create, edit, or delete flashcards organized by subject. Each flashcard contains a question and its corresponding answer.
+
+Quiz Session o Users select a subject to be quizzed on o Questions are displayed randomly or in sequence o Users input answers and receive immediate feedback (Correct/Incorrect)
+
+Performance Tracking After each quiz: o The app shows the number of correct/incorrect answers o Progress is stored and categorized by subject o Option to retake incorrect questions via Retest Mode
+
+Data Persistence Flashcards and performance data are saved in JSON files, allowing users to resume progress even after restarting the app. 👥 Team Members Name Student Number Ifeoluwani Odeyemi A00286338 Bianca Edwin A00298231 Chiamaka Okoli A00291190 Priya Ravikumar A00332190
+
+✅ Key Features
+
+Feature Primary Member Secondary Member
+
+Create, Edit & Delete Flashcards by Subject Ifeoluwani Odeyemi Bianca Edwin Quiz Mode with Random & Sequential Options Chiamaka Okoli Ifeoluwani Odeyemi Performance Tracking & Session Summaries Bianca Edwin Chiamaka Okoli Retest Mode – Retry Incorrect Questions Ifeoluwani Odeyemi Bianca Edwin Save & Load Flashcard Sets (local file storage) Chiamaka Okoli Ifeoluwani Odeyemi Subject-Based Score Filtering Bianca Edwin Chiamaka Okoli User Profile Management Ifeoluwani Odeyemi Bianca Edwin SMS Reminder Integration (Optional) Chiamaka Okoli Ifeoluwani Odeyemi User Feedback Survey Module Priya Ravikumar Bianca Edwin Flashcard Export to CSV Priya Ravikumar Chiamaka Okoli
+
+⚖️ Application Flow
+
+Start: User opens the app and selects a menu option.
+Create Flashcards: Enter the subject, question, and answer.
+Take Quiz: Select subject → answer flashcards → view feedback.
+View Performance: User sees scores and tracks history.
+Retest: Focused quiz on incorrect answers from last session.
+Exit: User exits and data is saved automatically to JSON.
+📆 Agile Task Board (Kanban Style) Backlog (Not Started) • User Authentication System (Priya) • Create voice support integration plan (Bianca) • SMS Reminder System Architecture (Chiamaka) • Flashcard Import/Export from CSV (Ifeoluwani) • JSON Schema Validation (Priya)
+
+In Progress • Build Flashcard Class and JSON Serializer (Ifeoluwani) • Quiz Logic Implementation (Chiamaka) • Performance History Logging (Bianca) • Profile Switching Feature (Priya) • Input Validation for Quiz Responses (Chiamaka)
+
+In Review • Flashcard Load & Save Testing (Bianca) • Retest Mode Function Testing (Ifeoluwani) • Menu UI Enhancements (Priya) • SMS Simulation Flow with Dummy Data (Chiamaka)
+
+Completed • Console Menu Layout Design (All) • Flashcard Creation Module (Ifeoluwani) • Quiz Randomization Logic (Chiamaka) • Session Summary Display (Bianca) • GitHub Repository Setup and Commit Standards (All)
+
+📄 Console User Interfaces Main Menu +-----------------------------------+ | Welcome to StudyMate! | | 1. Create Flashcards | | 2. Take a Quiz | | 3. View Performance | | 4. Retest Incorrect Answers | | 5. Exit | +-----------------------------------+ +-----------------------------------+ | Create Flashcards | | Subject: _______________________ | | Question: ______________________ | | Answer: ________________________ | +-----------------------------------+ Quiz Screen +-----------------------------------+ | Quiz - Subject: Biology | | Q1: What is the powerhouse of... | | Your Answer: ___________________ | | [Correct / Incorrect] | +-----------------------------------+ Performance Summary Screen +-----------------------------------+ | Quiz Summary | | Total Questions: 10 | | Correct: 7 | | Incorrect: 3 | | Retest available: Yes | +-----------------------------------+
